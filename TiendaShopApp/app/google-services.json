@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "309464059521",
+    "firebase_url": "https://tiendashop-f8cda-default-rtdb.firebaseio.com",
+    "project_id": "tiendashop-f8cda",
+    "storage_bucket": "tiendashop-f8cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309464059521:android:c7b472b6d50c982c154780",
+        "android_client_info": {
+          "package_name": "com.example.tiendashopapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm5IdhPbl8fQQR19xhUnfHN6E7i2cK6Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

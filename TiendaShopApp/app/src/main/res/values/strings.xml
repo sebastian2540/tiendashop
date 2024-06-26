@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tienda Shop App</string>
+    <string name="button_iniciar">Inicio</string>
+    <string name="text_inicio">Inicio App</string>
+    <string name="button_registro">Registrar</string>
+    <string name="button_inicio">Iniciar</string>
+    <string name="text_registro">Registro</string>
+    <string name="input_id">Identificación</string>
+    <string name="input_nombre">Nombre</string>
+    <string name="input_apellido">Apellido</string>
+    <string name="input_email">Correo Electrónico</string>
+    <string name="input_contrasena">Contraseña</string>
+    <string name="button_guardar">Guardar</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="input_usuario">Correo Electrónico</string>
+    <string name="button_ingresar">Ingresar</string>
+    <string name="button_volver_inicio">Inicio App</string>
+    <string name="text_dashboard">Bienvenido al Dashboard</string>
+    <string name="button_salir">Salir</string>
+    <string name="text_usuario_logueado">Usuario Logueado</string>
+    <string name="text_datos_almacenados">Datos Almacenados</string>
+</resources>

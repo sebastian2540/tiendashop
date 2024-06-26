@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosAlmacenados">
+
+    <TextView
+        android:id="@+id/textViewDatosAlmanedos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/text_datos_almacenados"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextConsultaBD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextIDUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ID Usuario"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextNombreUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/TextNombreUsuario"
+        app:layout_constraintStart_toStartOf="@+id/TextNombreUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextConsultaBD" />
+
+    <TextView
+        android:id="@+id/TextNombreUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextApellidoUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/TextApellidoUsuario"
+        app:layout_constraintStart_toStartOf="@+id/TextApellidoUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/TextIDUsuario" />
+
+    <TextView
+        android:id="@+id/TextApellidoUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextEmailUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/TextEmailUsuario"
+        app:layout_constraintStart_toStartOf="@+id/TextEmailUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombreUsuario" />
+
+    <TextView
+        android:id="@+id/TextEmailUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="358dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextApellidoUsuario" />
+
+    <EditText
+        android:id="@+id/EditTextConsultaBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Consulta BD"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/TextIDUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDatosAlmanedos"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatosAlmanedos" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailUsuario">>
+
+        <Button
+            android:id="@+id/ButtonConsultarDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_limon"
+            android:text="Consultar Datos"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/ButtonDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_fofo"
+            android:text="Dashboard"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
