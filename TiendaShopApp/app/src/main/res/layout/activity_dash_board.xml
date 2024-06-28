@@ -13,12 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="16dp"
         android:text="@string/text_dashboard"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TextUsuarioActivo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,43 +33,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextDatosUsuario"
         tools:ignore="SpUsage,TextSizeCheck,UnusedAttribute" />
-
-    <ImageView
-        android:id="@+id/ButtonVerDatosUsuario"
-        android:layout_width="94dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/TextDatosUsuario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextUsuarioActivo"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
         android:id="@+id/TextDatosUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="352dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="9dp"
         android:text="Datos"
-        android:textStyle="bold"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonSalir"
-        app:layout_constraintEnd_toEndOf="@+id/ButtonVerDatosUsuario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ButtonVerDatosUsuario"
         app:layout_constraintTop_toBottomOf="@+id/ButtonVerDatosUsuario" />
 
     <TextView
         android:id="@+id/TextUsuarioActivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="16dp"
         android:text="@string/text_usuario_logueado"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonVerDatosUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewInicioSesion" />
+
+    <ImageButton
+        android:id="@+id/ButtonVerDatosUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextUsuarioActivo"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

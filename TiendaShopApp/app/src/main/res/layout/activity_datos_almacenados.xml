@@ -10,8 +10,8 @@
         android:id="@+id/textViewDatosAlmanedos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/text_datos_almacenados"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -21,13 +21,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <EditText
+        android:id="@+id/EditTextConsultaBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Consulta BD"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/TextIDUsuario"
+        app:layout_constraintStart_toStartOf="@+id/textViewDatosAlmanedos"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatosAlmanedos" />
+
     <TextView
         android:id="@+id/TextIDUsuario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ID Usuario"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/TextNombreUsuario"
         app:layout_constraintEnd_toEndOf="@+id/TextNombreUsuario"
@@ -40,7 +55,7 @@
         android:layout_height="wrap_content"
         android:text="Nombre"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/TextApellidoUsuario"
         app:layout_constraintEnd_toEndOf="@+id/TextApellidoUsuario"
@@ -53,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="Apellido"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/TextEmailUsuario"
         app:layout_constraintEnd_toEndOf="@+id/TextEmailUsuario"
@@ -64,42 +79,30 @@
         android:id="@+id/TextEmailUsuario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginBottom="358dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="19dp"
         android:text="Email"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextApellidoUsuario" />
 
-    <EditText
-        android:id="@+id/EditTextConsultaBD"
+    <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="33dp"
-        android:ems="10"
-        android:hint="Consulta BD"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/TextIDUsuario"
-        app:layout_constraintEnd_toEndOf="@+id/textViewDatosAlmanedos"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDatosAlmanedos" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="27dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextEmailUsuario">>
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailUsuario">
 
         <Button
             android:id="@+id/ButtonConsultarDatos"
@@ -120,6 +123,104 @@
             android:layout_weight="1"
             android:backgroundTint="@color/verde_fofo"
             android:text="Dashboard"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editar_input_nombre_usuario"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_nombre"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editar_input_apellido_usuario"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_apellido"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editar_input_email_usuario"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_email"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="78dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <Button
+            android:id="@+id/ButtonActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:text="Actualizar"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/ButtonEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojo"
+            android:text="Eliminar"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"
